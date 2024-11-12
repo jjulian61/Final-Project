@@ -18,6 +18,14 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    padding: 56px 0;
+}
+
+.container1 {
+  padding: 200px 0;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -28,6 +36,14 @@ body {
     color: #7342d6 ;
 }
 
+ul {
+  list-style: none;
+}
+
+.first__section--wrapper {
+  display: flex;
+}
+
 
 /*NAVIGATION BAR*/
 
@@ -36,6 +52,7 @@ nav {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 12px;
@@ -46,6 +63,13 @@ nav {
     color: #242424;
     font-weight: 700;
   }
+
+  .nav__link--anchor1 {
+    margin: 0 12px;
+    color: #242424;
+    font-weight: 700;
+    cursor: not-allowed;
+  }
   
   .btn {
     background-color: #6030b1;
@@ -53,12 +77,13 @@ nav {
     border-radius: 50px;
     color: white;
     transition: all 300ms ease;
+    cursor: pointer;
+    
   }
 
 
  .nav__link--list {
     display: flex;
-    margin-left: 460px;
     list-style: none;
  }
 
@@ -68,6 +93,9 @@ nav {
     width: 5%;
     height: 100%;
     max-height: 50vh;
+    margin-right: 450px;
+    margin-top: 150px;
+    font-weight: 900;
  }
 
  .treact__img {
@@ -127,15 +155,15 @@ nav {
     justify-content: flex-end;
     width: 25%;
     height: 100%;
-    max-height: 20vh;
+    max-height: 100vh;
     margin-left: 50px;
     
   }
 
   .customers__logo {
-    width: 25%;
+    width: 50%;
     height: 100%;
-    max-height: 50vh;
+    max-height: 100vh;
     margin-left: 10px;
   }
 
@@ -190,18 +218,18 @@ nav {
     font-size: 16px;
   }
 
+  .quality__work--wrapper {
+    display: flex;
+  }
+
   .img__design {
     width: 30%;
     height: 100%;
     max-height: 50vh;
-    align-items: flex-end;
-    margin-left: 600px;
+    margin-left: 300px;
   }
 
-  .img__wrapper1 {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 
   .btn1 {
     background-color: #6030b1;
@@ -209,8 +237,8 @@ nav {
     border-radius: 50px;
     color: white;
     transition: all 300ms ease;
-    width: 100%;
-    margin-left: 10px;
+    cursor: pointer;
+    margin-left: 5px;
   }
 
   .para__qwork {
@@ -290,6 +318,7 @@ nav {
     transition: all 300ms ease;
     margin-top: 40px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .para__values--principles {
@@ -312,6 +341,238 @@ nav {
     flex-direction: column;
  }
 
+ .pbe__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .personal__wrapper {
+    flex-direction: column;
+    margin-left: 20px;
+ }
+
+ .business__wrapper {
+    flex-direction: column;
+    margin-left: 350px;
+    background-color: blue;
+ }
+
+ .enterprise__wrapper {
+    flex-direction: column;
+    margin-left: 300px;
+ }
+
+ .para__for {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+ }
+
+ .para__monthly {
+    font-size: 15px;
+    color: grey;
+    margin-top: 10px;
+ }
+
+ .btn__personal {
+    background-color: #8ad027;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: white;
+    transition: all 300ms ease;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+
+ .btn__business {
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: purple;
+    transition: all 300ms ease;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+
+ .btn__enterprise {
+    background-color: red;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: white;
+    transition: all 300ms ease;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+
+ .pbe__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+
+.white {
+    color: white;
+}
+
+ /*TESTIMONIALS*/
+
+ .img__love {
+    width: 35%;
+    height: 100%;
+    max-height: 50vh;
+    margin-top: 150px;
+ }
+
+ .testimonials__title {
+    font-size: 16px;
+    margin: 10px;
+ }
+
+ .grey {
+    color: gray;
+ }
+
+ .customer__ratings {
+    color: yellow;
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+
+ .amazing__header {
+    font-size: 18px;
+    margin-bottom: 10px;
+ }
+
+ .lorem55__para {
+    margin-left: 10px;
+ }
+
+ .para__lorem23 {
+    margin-left: 10px;
+    margin: 10px;
+ }
+
+ .testimonials__wrapper {
+    display: flex;
+ }
+
+ .testimonials__wrapper2 {
+    margin-left: 300px;
+ }
+
+ .charlotte__header {
+    font-size: 18px;
+    margin: 10px;
+
+ }
+
+  /*GET STARTED/CONTACT US*/
+
+ #getstart__contactus {
+  display: flex;
+  height: 22vh;
+  background-color: rgb(100, 21, 255);
+  align-items: center;
+  justify-content: center;
+ }
+
+ .btn__get--started {
+  background-color: red;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: white;
+  transition: all 300ms ease;
+  margin-top: 20px;
+  margin-left: 80px;
+  height: 45px;
+  cursor: pointer;
+ }
+
+ .developers__header {
+  font-size: 20px;
+  margin-top: 20px;
+ }
+
+ .btn__contact--us {
+  background-color: purple;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: white;
+  transition: all 300ms ease;
+  margin-top: 20px;
+  margin-left: 100px;
+  height: 45px;
+  cursor: pointer;
+ }
+
+  /*FOOTER*/
+
+  .mpptl__wrapper {
+    background-color: rgb(100, 21, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  
+  .mpptl__header {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .links {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .treact__img1 {
+    width: 5%;
+    height: 100%;
+    max-height: 50vh;
+  }
+
+  .treact__img--wrapper {
+    background-color: rgb(100, 21, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-between;
+  }
+
+  .treact__inc {
+    margin-top: 20px;
+  }
+
+  .at__treact {
+    margin-top: 20px ;
+  }
+
+  .fa-facebook {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+  
+  }
+
+  .fa-twitter {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .fa-youtube {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+ 
+
+  
+
+
+
+ 
  
  
 
